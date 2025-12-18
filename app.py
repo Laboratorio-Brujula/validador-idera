@@ -22,6 +22,7 @@ st.set_page_config(
 st.subheader("LABORATORIO DE LA BRÚJULA") 
 st.title("VALIDADOR DE OBJETOS GEOGRÁFICOS IDERA") 
 st.markdown("Herramienta para la normalización y depuración de datos espaciales. Se trata de una app que facilita la reproyección a fajas locales, la corrección de tipos geométricos y la edición de tablas de atributos, asegurando que los archivos exportados en formato shapefile sean 100% interoperables y cumplan con la normativa vigente según el **Catálogo de Objetos de la Infraestructura de Datos Espaciales de la República Argentina**.") 
+st.markdown("_Última actualización del catalogo, septiempre 2025._")
 st.divider()
 
 # ------------------------------
@@ -366,3 +367,5 @@ if st.button("Validar y generar SHP"):
         file_name=f"{og_cod}_IDERA.zip",
         mime="application/zip"
     )
+st.divider()
+st.markdown("Creado en el **Laboratorio de la Brújula |** Innovación digital para el desarrollo territorial | _https://santifederico-validador-idera-app-uhrhkz.streamlit.app/_")

@@ -1,4 +1,577 @@
 {
+  "01": {
+    "nombre": "INDUSTRIA Y SERVICIOS",
+    "subclases": {
+      "0101": {
+        "nombre": "EXTRACCIÓN",
+        "objetos": {
+          "010103": {
+            "nombre": "Área de explotación hidrocarburífera",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Área donde se efectúa una actividad extractiva de origen hidrocarburífera para su aprovechamiento económico.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "tia": {
+                "nombre": "Tipo de área de explotación",
+                "tipo": "string"
+              },
+              "eop": {
+                "nombre": "Empresa operadora",
+                "tipo": "string"
+              },
+              "eif": {
+                "nombre": "Empresa informante",
+                "tipo": "string"
+              },
+              "pcs": {
+                "nombre": "Participación en consorcio",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      },
+      "0102": {
+        "nombre": "FABRICACIÓN Y PROCESAMIENTO",
+        "objetos": {
+          "010204": {
+            "nombre": "Planta potabilizadora de agua",
+            "geometria": [
+              "Punto",
+              "Polígono"
+            ],
+            "definicion": "Instalaciones cuya función es la producción de agua para consumo humano.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "fun": {
+                "nombre": "Estado",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "010205": {
+            "nombre": "Área de fabricación y procesamiento",
+            "geometria": [
+              "Punto",
+              "Polígono"
+            ],
+            "definicion": "Área con instalaciones para producción o procesamiento de materias primas, transformándolas en bienes o productos utilizables en otras actividades. Incluye parques industriales, polos petroquímicos, entre otros.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      },
+      "0104": {
+        "nombre": "ENERGÍA",
+        "objetos": {
+          "010401": {
+            "nombre": "Central eléctrica",
+            "geometria": [
+              "Punto",
+              "Polígono"
+            ],
+            "definicion": "Edificio y equipamiento necesario para la generación de energía eléctrica.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "fun": {
+                "nombre": "Estado",
+                "tipo": "string"
+              },
+              "ppc": {
+                "nombre": "Tipo de centra eléctrica",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "010402": {
+            "nombre": "Línea de transmisión eléctrica",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Sistema de cableado que transmite o distribuye energía eléctrica.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "fun": {
+                "nombre": "Estado",
+                "tipo": "string"
+              },
+              "ten": {
+                "nombre": "Tipo de tensión",
+                "tipo": "string"
+              },
+              "scn": {
+                "nombre": "Sección",
+                "tipo": "string"
+              },
+              "dts": {
+                "nombre": "Fecha inicio",
+                "tipo": "string"
+              },
+              "epr": {
+                "nombre": "Empresa propietaria",
+                "tipo": "string"
+              },
+              "ecn": {
+                "nombre": "Empresa concesionaria",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "010403": {
+            "nombre": "Estación transformadora",
+            "geometria": [
+              "Punto",
+              "Polígono"
+            ],
+            "definicion": "Planta que se encuentra junto a las centrales generadoras o en la periferia de las diversas zonas de consumo, donde se transforma la tensión de la energía eléctrica.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "fun": {
+                "nombre": "Estado",
+                "tipo": "string"
+              },
+              "dts": {
+                "nombre": "Fecha inicio",
+                "tipo": "string"
+              },
+              "epr": {
+                "nombre": "Empresa propietaria",
+                "tipo": "string"
+              },
+              "ecn": {
+                "nombre": "Empresa concesionaria",
+                "tipo": "string"
+              },
+              "poi": {
+                "nombre": "Potencia instalada",
+                "tipo": "string"
+              },
+              "tne": {
+                "nombre": "Tension de entrada",
+                "tipo": "string"
+              },
+              "tns": {
+                "nombre": "Tension de salida",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      },
+      "0105": {
+        "nombre": "COMUNICACIONES",
+        "objetos": {
+          "010502": {
+            "nombre": "Antena",
+            "geometria": [
+              "Punto"
+            ],
+            "definicion": "Dispositivo diseñado con el objetivo de emitir o recibir ondas electromagnéticas. Está ubicado sobre un mástil, torre, edificio o construcción elevada desde el nivel del suelo.",
+            "atributos": {
+              "bda": {
+                "nombre": "Banda del espectro electromagnético en la que opera la antena.",
+                "tipo": "string"
+              },
+              "sir": {
+                "nombre": "Tipo de tecnología a la que sirve la antena. (2G, 3G, 4G, 450Mhz, Broadcast, TDA, etc.).",
+                "tipo": "string"
+              },
+              "msl": {
+                "nombre": "Distancia vertical respecto al nivel medio del mar (cota).",
+                "tipo": "string"
+              },
+              "egl": {
+                "nombre": "Elevación relativa",
+                "tipo": "string"
+              },
+              "fun": {
+                "nombre": "Clasificación del estado constructivo de estructuras y/o equipos que componen una instalación.",
+                "tipo": "string"
+              },
+              "fdd": {
+                "nombre": "Indicación de la fecha que indica el día, mes y año de toma del dato fuente.",
+                "tipo": "string"
+              },
+              "obs": {
+                "nombre": "Cualquier observación o referencia permanente o transitoria referida a un elemento en particular de este Objeto Geográfico.",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      },
+      "0106": {
+        "nombre": "ESTRUCTURA ASOCIADA",
+        "objetos": {
+          "010601": {
+            "nombre": "Ducto",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Serie de tubos conectados para el transporte de sólidos, líquidos o gases por bombeo. No incluye acueducto.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "fun": {
+                "nombre": "Estado",
+                "tipo": "string"
+              },
+              "tdu": {
+                "nombre": "Tipo de ducto",
+                "tipo": "string"
+              },
+              "caa": {
+                "nombre": "Autoridad responsable",
+                "tipo": "string"
+              },
+              "not": {
+                "nombre": "Nombre del tramo",
+                "tipo": "string"
+              },
+              "dim": {
+                "nombre": "Diámetro",
+                "tipo": "string"
+              },
+              "lzn": {
+                "nombre": "Longitud",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      },
+      "0108": {
+        "nombre": "GESTIÓN DE RESIDUOS",
+        "objetos": {
+          "010803": {
+            "nombre": "Planta de tratamiento de residuos",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Instalaciones donde se realiza algún tipo de clasificación o tratamiento a los residuos. Incluye plantas de residuos patológicos plantas recicladoras, entre otros.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "fun": {
+                "nombre": "Estado",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "02": {
+    "nombre": "INFRAESTRUCTURA SOCIAL",
+    "subclases": {
+      "0201": {
+        "nombre": "ASENTAMIENTO",
+        "objetos": {
+          "020103": {
+            "nombre": "Asentamiento humano",
+            "geometria": [
+              "Punto"
+            ],
+            "definicion": "Conjunto de edificios y elementos asociados emplazados en un lugar donde una comunidad se asienta y lleva a cabo actividades socioeconómicas. INDEC 2025 - (Adaptación de UN-GGIM)",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "tya": {
+                "nombre": "Tipo de asentamiento",
+                "tipo": "string"
+              },
+              "ca1": {
+                "nombre": "Función político administrativa",
+                "tipo": "string"
+              },
+              "ba1": {
+                "nombre": "Código de asentamiento humano",
+                "tipo": "string"
+              },
+              "fdc": {
+                "nombre": "Fuente de captura",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "020104": {
+            "nombre": "Planta urbana",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Área urbana aproximada que incluye la zona contigua de amanzanamiento edificado, cuyos límites son reconocibles.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      },
+      "0205": {
+        "nombre": "POLÍTICA Y ADMINISTRACIÓN",
+        "objetos": {
+          "020504": {
+            "nombre": "Edificio de gobierno local",
+            "geometria": [
+              "Punto"
+            ],
+            "definicion": "Asiento de la máxima autoridad del gobierno local.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      },
+      "0206": {
+        "nombre": "EDUCACIÓN",
+        "objetos": {
+          "020601": {
+            "nombre": "Establecimiento educativo",
+            "geometria": [
+              "Punto",
+              "polígono"
+            ],
+            "definicion": "Es la unidad institucional donde se registra la oferta educativa, cuya creación o autorización se registra bajo un acto administrativo - ley, decreto, resolución o disposición. Existe en él una autoridad máxima coo responsable pedagógico administrativo, con una planta funcional asignada, para impartir educacióna un grupo de alumnos. El establecimiento constituye la unidad organizacional que contiene en su interior a la/s unidades educativas, las cuales forman parte del establecimiento y se corresponden con cada uno de los niveles de enseñanza para los cuales se imparte educación. Un establecimiento puede funcionar en una o varias localizaciones geográficas. En caso de ser varias se compone de sede/s y anexo/s. Sede: es la localización donde cumple sus funciones la máxima autoridad pedagógica administrativa del establecimiento. La sede puede no tener alumnos. Anexo: es la localización donde funciona una sección o grupo de secciones que depende pedagógica y administrativamente de una localización sede y funciona en otro lugar geográfico (Ministerio de Educación, Ciencia y Tecnología, 2018).",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "fun": {
+                "nombre": "Estado ",
+                "tipo": "string"
+              },
+              "cue": {
+                "nombre": "Clave única de establecimiento",
+                "tipo": "string"
+              },
+              "ges": {
+                "nombre": "Sector de Gestión",
+                "tipo": "string"
+              },
+              "amg": {
+                "nombre": "Ámbito geográfico",
+                "tipo": "string"
+              },
+              "mde": {
+                "nombre": "Modalidad de educación",
+                "tipo": "string"
+              },
+              "nen": {
+                "nombre": "Nivel de enseñanza",
+                "tipo": "string"
+              },
+              "pre": {
+                "nombre": "Precisión",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "020602": {
+            "nombre": "Institución universitaria",
+            "geometria": [
+              "Punto",
+              "polígono"
+            ],
+            "definicion": "Institución de enseñanza superior que otorga distintos grados académicos. Incluye Universidades e Institutos Universitarios. ",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "fun": {
+                "nombre": "Estado ",
+                "tipo": "string"
+              },
+              "idi": {
+                "nombre": "Identificador de institución",
+                "tipo": "string"
+              },
+              "tdi": {
+                "nombre": "Tipo de institución",
+                "tipo": "string"
+              },
+              "caa": {
+                "nombre": "Autoridad responsable",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      },
+      "0208": {
+        "nombre": "SALUD",
+        "objetos": {
+          "020801": {
+            "nombre": "Edificio de salud",
+            "geometria": [
+              "Punto"
+            ],
+            "definicion": "Construcción destinada a la asistencia de personas. Incluye hospital, sala de primeros auxilios, puesto asistencial, dispensario, entre otros.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "caa": {
+                "nombre": "Autoridad responsable",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   "03": {
     "nombre": "TRANSPORTE",
     "subclases": {
@@ -415,6 +988,1219 @@
               },
               "feo": {
                 "nombre": "Orientación del objeto",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "04": {
+    "nombre": "HIDROGRAFÍA Y OCEANOGRAFÍA",
+    "subclases": {
+      "0401": {
+        "nombre": "COSTAS Y ZONAS LITORALES",
+        "objetos": {
+          "040105": {
+            "nombre": "Isla",
+            "geometria": [
+              "Punto",
+              "Polígono"
+            ],
+            "definicion": "Parte de la superficie terrestre rodeada de agua y de dimensiones menores que un continente. ",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      },
+      "0403": {
+        "nombre": "PROFUNDIDADES",
+        "objetos": {
+          "040301": {
+            "nombre": "Curva batimétrica",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Línea trazada en un espejo de agua, corriente de agua, mar u océano, que une puntos de igual profundidad respecto de un nivel de referencia definido. También se la denomina isobata.",
+            "atributos": {
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      },
+      "0411": {
+        "nombre": "AGUAS CONTINENTALES",
+        "objetos": {
+          "041102": {
+            "nombre": "Corriente de agua",
+            "geometria": [
+              "Línea",
+              "Polígono"
+            ],
+            "definicion": "Flujo natural de agua que sigue los desniveles del terreno, siendo arreico o desembocando en otra corriente de agua, en un espejo de agua o en el mar.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "hyp": {
+                "nombre": "Régimen hidrológico",
+                "tipo": "string"
+              },
+              "si1": {
+                "nombre": "Sistema hídrico",
+                "tipo": "string"
+              },
+              "cu1": {
+                "nombre": "Cuenca hídrica superficial",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "041104": {
+            "nombre": "Dique",
+            "geometria": [
+              "Punto",
+              "línea"
+            ],
+            "definicion": "Terraplén (de terreno natural o material) destinado a detener o estancar el escurrimiento del agua en su curso, a los efectos de su almacenamiento para fines rurales o industriales.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "fun": {
+                "nombre": "Estado",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "041107": {
+            "nombre": "Espejo de agua",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Cuerpo natural o artificial de agua, dulce o salada, cuyo aporte proviene de corrientes de agua, afloramientos subterráneos o precipitaciones. Quedan excluidos los embalses y los embalses rurales.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "hyp": {
+                "nombre": "Régimen hidrológico",
+                "tipo": "string"
+              },
+              "si1": {
+                "nombre": "Sistema hídrico",
+                "tipo": "string"
+              },
+              "cu1": {
+                "nombre": "Cuenca hídrica superficial",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "05": {
+    "nombre": "GEOGRAFÍA FÍSICA",
+    "subclases": {
+      "0501": {
+        "nombre": "HIPSOGRAFÍA",
+        "objetos": {
+          "050101": {
+            "nombre": "Curva de nivel",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Línea que une puntos que tienen el mismo valor de altitud respecto al nivel medio del mar. También se la denomina isohipsa o curva hipsométrica.",
+            "atributos": {
+              "crv": {
+                "nombre": "Valor de curva de nivel",
+                "tipo": "string"
+              },
+              "mo2": {
+                "nombre": "Método de obtención curva",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      },
+      "0502": {
+        "nombre": "GEOMORFOLOGÍA",
+        "objetos": {
+          "050203": {
+            "nombre": "Cerro",
+            "geometria": [
+              "Punto"
+            ],
+            "definicion": "Elevación que sobresale de los lineamientos serranos o montañosos. Incluye monte, morro, nevado, pico, entre otros. No incluye volcán. El nevado es un cerro de gran altura que posee nieves perpetuas en su cumbre y permanece blanco durante todo el año. Un pico es una elevación montañosa, de cumbre aguda y puntiaguda con flancos escarpados. ",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "msl": {
+                "nombre": "Altitud",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      },
+      "0506": {
+        "nombre": "VULCANISMO Y SISMICIDAD",
+        "objetos": {
+          "050601": {
+            "nombre": "Volcán",
+            "geometria": [
+              "Punto"
+            ],
+            "definicion": "Fractura u orificio de la superficie de la tierra a través del cual ascienden magma y gases que provienen de zonas profundas y que liberan importantes cantidades de energía térmica y cinética. Con el mismo nombre se denomina a la elevación topográfica formada por lava, materiales piroclásticos o ambos.     ",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "msl": {
+                "nombre": "Altitud",
+                "tipo": "string"
+              },
+              "voa": {
+                "nombre": "Estado de actividad",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      },
+      "0513": {
+        "nombre": "ÁREAS DE CONSERVACIÓN Y MANEJO SUSTENTABLE",
+        "objetos": {
+          "051301": {
+            "nombre": "Área protegida",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Son zonas de ecosistemas continentales (terrestres o acuáticos), costeros/marinos o marinos, o una combinación de los mismos, con límites definidos y bajo un marco normativo acorde con sus objetivos de conservación, que constituyen una estrategia fundamental para la conservación a largo plazo de la diversidad biológica y cultural, proporcionando bienes y servicios ecosistémicos esenciales para la sociedad y la vida en general. (SIFAP 2023)",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "tap": {
+                "nombre": "Tipo de área protegida",
+                "tipo": "string"
+              },
+              "ara": {
+                "nombre": "Área",
+                "tipo": "string"
+              },
+              "dct": {
+                "nombre": "Fecha de construcción",
+                "tipo": "string"
+              },
+              "caa": {
+                "nombre": "Autoridad responsable",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "051302": {
+            "nombre": "Reserva de biósfera",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Ecosistema terrestre o costero/ marino, o una combinación de los mismos, reconocido como tal en un plano internacional en el marco del Programa MAB (Hombre y la Atmósfera) de la UNESCO.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "ara": {
+                "nombre": "Área",
+                "tipo": "string"
+              },
+              "dct": {
+                "nombre": "Fecha de construcción",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "051303": {
+            "nombre": "Sitio RAMSAR",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Son humedales que están incluidos en la Lista de Humedales de Importancia Internacional de la Convención sobre los Humedales (conocida como Convención de Ramsar). https://www.ramsar.org/sites/default/files/documents/library/ramsarsites_criteria_sp.pdf",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "ara": {
+                "nombre": "Área",
+                "tipo": "string"
+              },
+              "dct": {
+                "nombre": "Fecha de construcción",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "051304": {
+            "nombre": "Ordenamiento Territorial de Bosque Nativo",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Áreas de protección ambiental a los bosques nativos según lo establecido en la Ley  de 26.331. (OTBN)",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "cam": {
+                "nombre": "Categoría de gestión del área de conservación ",
+                "tipo": "string"
+              },
+              "dct": {
+                "nombre": "Fecha de construcción",
+                "tipo": "string"
+              },
+              "ara": {
+                "nombre": "Área",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "07": {
+    "nombre": "DEMARCACIÓN",
+    "subclases": {
+      "0701": {
+        "nombre": "FRONTERAS Y LÍMITES",
+        "objetos": {
+          "070101": {
+            "nombre": "Línea de base normal",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Línea a partir de la cual se mide el mar territorial, zona contigua, zona económica exclusiva y plataforma continental. También representa el límite exterior de las aguas interiores. Se define como la línea de bajamar a lo largo de la costa. Es la isobata de 0 metro, que corresponde al nivel del datum vertical local.",
+            "atributos": {}
+          },
+          "070102": {
+            "nombre": "Línea de base recta",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Línea a partir de la cual se mide el mar territorial, zona contigua, zona económica exclusiva y plataforma continental. También representa el límite exterior de las aguas interiores. Se define como la línea recta que une puntos sobre la línea de base normal. Las líneas de base archipelágicas rectas definen la periferia de un grupo  de islas.",
+            "atributos": {}
+          },
+          "070103": {
+            "nombre": "Línea de costa",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Línea que marca el contacto entre una masa de tierra y un cuerpo de agua, establecida por la línea de las más bajas bajamares, ya sea en las aguas litorales o interiores.",
+            "atributos": {}
+          },
+          "070104": {
+            "nombre": "Límite del lecho y subsuelo",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Línea demarcatoria de aguas jurisdiccionales en los fondos fluviales, definida en el Tratado del Río de la Plata y su Frente Marítimo.",
+            "atributos": {}
+          },
+          "070105": {
+            "nombre": "Límite lateral marítimo",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Línea de deslinde entre mares jurisdiccionales contiguos, definida en el Tratado del Río de la Plata su Frente Marítimo.",
+            "atributos": {}
+          },
+          "070106": {
+            "nombre": "Límite del Mar Territorial Argentino",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Delimitación exterior del Mar Territorial Argentino, el cual se extiende hasta una distancia de 12 millas marinas a partir de las líneas de base.",
+            "atributos": {}
+          },
+          "070107": {
+            "nombre": "Mar Territorial Argentino",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Zona marítima que se extiende hasta una distancia de 12 millas marinas a partir de la línea de base.",
+            "atributos": {}
+          },
+          "070108": {
+            "nombre": "Límite de la Zona Contigua Argentina",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Delimitación exterior de la Zona Contigua Argentina, la cual se extiende más allá del límite exterior del mar territorial, hasta una distancia de 24 millas marinas medidas a partir de las líneas de base.",
+            "atributos": {}
+          },
+          "070109": {
+            "nombre": "Zona Contigua Argentina",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Zona marítima que se extiende desde el límite exterior del mar territorial, hasta una distancia de 24 millas marinas medidas a partir de las líneas de base.",
+            "atributos": {}
+          },
+          "070110": {
+            "nombre": "Límite de la Zona Económica Exclusiva Argentina",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Delimitación exterior de la Zona Económica Exclusiva Argentina, la cual se extiende más allá del límite exterior del mar territorial, hasta una distancia de 200 millas marinas a partir de las líneas de base.",
+            "atributos": {}
+          },
+          "070111": {
+            "nombre": "Zona Económica Exclusiva Argentina",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Zona marítima que se extiende más allá del límite exterior del mar territorial, hasta una distancia de 200 millas marinas a partir de las líneas de base.",
+            "atributos": {}
+          },
+          "070112": {
+            "nombre": "Límite de la Plataforma Continental",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Delimitación exterior de la Plataforma Continental, la cual comprende el lecho y el subsuelo de las áreas submarinas que se extienden más allá del mar territorial y a todo lo largo de la prolongación natural del territorio hasta el borde exterior del margen continental, o bien hasta una distancia de 200 millas marinas medidas a partir de las líneas de base, en los casos en que el borde exterior no llegue a esa distancia.",
+            "atributos": {}
+          },
+          "070113": {
+            "nombre": "Plataforma Continental",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Zona marítima que comprende el lecho y el subsuelo de las áreas submarinas que se extienden más allá del mar territorial y a todo lo largo de la prolongación natural del territorio hasta el borde exterior del margen continental, o bien hasta una distancia de 200 millas marinas contadas desde la línea de base, en los casos en que el borde exterior del margen continental no llegue a esa distancia.",
+            "atributos": {}
+          },
+          "070114": {
+            "nombre": "Límite de gobierno local",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Línea que constituye la representación de la traza demarcadora que delimita un gobierno local (municipios, comunas y demás categorías) de menor jerarquía que un departamento o partido.",
+            "atributos": {
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "070115": {
+            "nombre": "Límite interdepartamental o de partido",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Línea que constituye la representación de la traza demarcadora que delimita la jurisdicción de un departamento o partido de otro.",
+            "atributos": {
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "070116": {
+            "nombre": "Límite interprovincial",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Línea que constituye la representación de la traza demarcadora que delimita una provincia de otra.",
+            "atributos": {
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "070117": {
+            "nombre": "Límite internacional",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Línea que constituye la representación de la traza demarcadora que delimita un país.",
+            "atributos": {}
+          },
+          "070118": {
+            "nombre": "Límite de Zona de Frontera",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Línea que constituye la representación de la traza demarcadora que delimita la Zona de Frontera.",
+            "atributos": {}
+          },
+          "070119": {
+            "nombre": "Zona de Frontera",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Zona adyacente al límite internacional, que constituye una zona de seguridad destinada a complementar las previsiones territoriales de la defensa nacional y / o un área prioritaria para su desarrollo.",
+            "atributos": {
+              "tzz": {
+                "nombre": "Tipo de zona de frontera",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "070120": {
+            "nombre": "Gobierno local",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "División político administrativa de tercer orden, que incluye municipios, comunas, juntas vecinales y demás formas de gobierno local.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "cmu": {
+                "nombre": "Código Municipio",
+                "tipo": "string"
+              },
+              "ca3": {
+                "nombre": "Cantidad de población",
+                "tipo": "string"
+              },
+              "tgl": {
+                "nombre": "Tipo de gobierno local",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "070121": {
+            "nombre": "Departamento",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "División político administrativa de segundo orden. Incluye partido y comuna.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "cde": {
+                "nombre": "Código Departamento",
+                "tipo": "string"
+              },
+              "cca": {
+                "nombre": "Código parcelario",
+                "tipo": "string"
+              },
+              "ara": {
+                "nombre": "Área",
+                "tipo": "string"
+              },
+              "ca3": {
+                "nombre": "Cantidad de población",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "070122": {
+            "nombre": "Provincia",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "División político territorial de primer orden. Incluye la Ciudad Autónoma de Buenos Aires (CABA).",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "cpr": {
+                "nombre": "Código Provincia",
+                "tipo": "string"
+              },
+              "ca3": {
+                "nombre": "Cantidad de población",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "070123": {
+            "nombre": "País",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Nación jurídicamente organizada.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "ca3": {
+                "nombre": "Cantidad de población",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "070124": {
+            "nombre": "Paso fronterizo",
+            "geometria": [
+              "Punto"
+            ],
+            "definicion": "Punto geográfico (hecho físico) que permite ingresar o salir de un país.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      },
+      "0703": {
+        "nombre": "REDES GEODÉSICAS",
+        "objetos": {
+          "070301": {
+            "nombre": "Red RAMSAC",
+            "geometria": [
+              "Punto"
+            ],
+            "definicion": "Red de estaciones GPS/GNSS permanentes que poseen coordenadas en el Marco de Referencia Geodésico Nacional POSGAR 2007. Esta red es denominada Red Argentina de Monitoreo Satelital Continuo (RAMSAC).",
+            "atributos": {
+              "cer": {
+                "nombre": "Código de estación RAMSAC",
+                "tipo": "string"
+              },
+              "ai1": {
+                "nombre": "Año de instalación",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "070302": {
+            "nombre": "Red Geocéntrica",
+            "geometria": [
+              "Punto"
+            ],
+            "definicion": "Red de pilares o mojones de primer orden que poseen coordenadas en el Marco de Referencia Geodésico Nacional POSGAR 2007.",
+            "atributos": {
+              "fna": {
+                "nombre": "Nombre geográfico",
+                "tipo": "string"
+              },
+              "pa1": {
+                "nombre": "PASMA 1",
+                "tipo": "string"
+              },
+              "pa2": {
+                "nombre": "PASMA 2",
+                "tipo": "string"
+              },
+              "pa3": {
+                "nombre": "PASMA 3",
+                "tipo": "string"
+              },
+              "pr1": {
+                "nombre": "Provincial 1",
+                "tipo": "string"
+              },
+              "pr2": {
+                "nombre": "Provincial 2",
+                "tipo": "string"
+              },
+              "pr3": {
+                "nombre": "Provincial 3",
+                "tipo": "string"
+              },
+              "psg": {
+                "nombre": "POSGAR",
+                "tipo": "string"
+              },
+              "den": {
+                "nombre": "Densificación POSGAR",
+                "tipo": "string"
+              },
+              "rni": {
+                "nombre": "Red de nivelación",
+                "tipo": "string"
+              },
+              "lag": {
+                "nombre": "Latitud grados",
+                "tipo": "string"
+              },
+              "lam": {
+                "nombre": "Latitud minutos",
+                "tipo": "string"
+              },
+              "las": {
+                "nombre": "Latitud segundos",
+                "tipo": "string"
+              },
+              "lgr": {
+                "nombre": "Longitud grados",
+                "tipo": "string"
+              },
+              "lom": {
+                "nombre": "Longitud minutos",
+                "tipo": "string"
+              },
+              "los": {
+                "nombre": "Longitud segundos",
+                "tipo": "string"
+              },
+              "ael": {
+                "nombre": "Altura elipsoidal",
+                "tipo": "string"
+              },
+              "pal": {
+                "nombre": "Tipo de marca",
+                "tipo": "string"
+              },
+              "epg": {
+                "nombre": "Estado de punto geodésico",
+                "tipo": "string"
+              },
+              "ulv": {
+                "nombre": "Última visita",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "070303": {
+            "nombre": "Red Altimétrica",
+            "geometria": [
+              "Punto"
+            ],
+            "definicion": "Red de pilares o mojones que poseen una altura referida al nivel medio del mar, a la que se la denomina cota.",
+            "atributos": {
+              "fna": {
+                "nombre": "Nombre geográfico",
+                "tipo": "string"
+              },
+              "lag": {
+                "nombre": "Latitud grados",
+                "tipo": "string"
+              },
+              "lam": {
+                "nombre": "Latitud minutos",
+                "tipo": "string"
+              },
+              "las": {
+                "nombre": "Latitud segundos",
+                "tipo": "string"
+              },
+              "lgr": {
+                "nombre": "Longitud grados",
+                "tipo": "string"
+              },
+              "lom": {
+                "nombre": "Longitud minutos",
+                "tipo": "string"
+              },
+              "los": {
+                "nombre": "Longitud segundos",
+                "tipo": "string"
+              },
+              "pla": {
+                "nombre": "Precisión planimétrica",
+                "tipo": "string"
+              },
+              "pal": {
+                "nombre": "Tipo de marca",
+                "tipo": "string"
+              },
+              "coo": {
+                "nombre": "Cota oficial",
+                "tipo": "string"
+              },
+              "epg": {
+                "nombre": "Estado de punto geodésico",
+                "tipo": "string"
+              },
+              "ulv": {
+                "nombre": "Última visita",
+                "tipo": "string"
+              }
+            }
+          },
+          "070304": {
+            "nombre": "Red gravimétrica",
+            "geometria": [
+              "Punto"
+            ],
+            "definicion": "Red de pilares o mojones que poseen un valor de aceleración de la gravedad en el datum gravimétrico por el Instituto Geográfico Nacional.",
+            "atributos": {
+              "fna": {
+                "nombre": "Nombre geográfico",
+                "tipo": "string"
+              },
+              "lag": {
+                "nombre": "Latitud grados",
+                "tipo": "string"
+              },
+              "lam": {
+                "nombre": "Latitud minutos",
+                "tipo": "string"
+              },
+              "las": {
+                "nombre": "Latitud segundos",
+                "tipo": "string"
+              },
+              "lgr": {
+                "nombre": "Longitud grados",
+                "tipo": "string"
+              },
+              "lom": {
+                "nombre": "Longitud minutos",
+                "tipo": "string"
+              },
+              "los": {
+                "nombre": "Longitud segundos",
+                "tipo": "string"
+              },
+              "pla": {
+                "nombre": "Precisión planimétrica",
+                "tipo": "string"
+              },
+              "ael": {
+                "nombre": "Altura elipsoidal",
+                "tipo": "string"
+              },
+              "coo": {
+                "nombre": "Cota oficial",
+                "tipo": "string"
+              },
+              "gsf": {
+                "nombre": "Gravedad oficial",
+                "tipo": "string"
+              },
+              "tgo": {
+                "nombre": "Tipo de gravedad oficial",
+                "tipo": "string"
+              },
+              "paa": {
+                "nombre": "Precisión altimétrica",
+                "tipo": "string"
+              },
+              "am1": {
+                "nombre": "Año de medición",
+                "tipo": "string"
+              },
+              "fdc": {
+                "nombre": "Fuente de captura",
+                "tipo": "string"
+              },
+              "ulv": {
+                "nombre": "Última visita",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      },
+      "0705": {
+        "nombre": "PLANEAMIENTO URBANO",
+        "objetos": {
+          "070503": {
+            "nombre": "Usos de suelo",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "La clasificación del uso de suelo está definida por las distintas categorías de espacios dentro de un municipio, en términos de los niveles de usos urbanos, de transición y rurales. (Mun SS de Jujuy - 2021)",
+            "atributos": {
+              "dsp": {
+                "nombre": "Descripción del uso de suelo",
+                "tipo": "string"
+              },
+              "sdp": {
+                "nombre": "Descripción de fuente (Ley, código o normativa)",
+                "tipo": "string"
+              },
+              "ara": {
+                "nombre": "Area",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "070504": {
+            "nombre": "Ejido urbano",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Área urbana delimitada legalmente.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "09": {
+    "nombre": "DEFENSA Y SEGURIDAD",
+    "subclases": {
+      "0901": {
+        "nombre": "INFRAESTRUCTURA DE DEFENSA",
+        "objetos": {
+          "090101": {
+            "nombre": "Edificio de seguridad",
+            "geometria": [
+              "Punto"
+            ],
+            "definicion": "Construcción destinada al asiento de la autoridad encargada de la seguridad. ",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "tes": {
+                "nombre": "Tipo de edificio de seguridad",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "090103": {
+            "nombre": "Cuartel de bomberos",
+            "geometria": [
+              "Punto"
+            ],
+            "definicion": "Estructura preparada para almacenar el equipamiento necesario para apagar fuegos, incluyendo mangueras, vehículos, equipos de protección del personal, extintores de fuego, entre otros. Puede tener también dormitorios e instalaciones de trabajo como salas de reunión, entre otros.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "11": {
+    "nombre": "CATASTRO",
+    "subclases": {
+      "1101": {
+        "nombre": "PARCELARIO",
+        "objetos": {
+          "110101": {
+            "nombre": "Parcela",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Extensión territorial continua, deslindada por un polígono de límites conocidos, perteneciente a un propietario.",
+            "atributos": {
+              "pda": {
+                "nombre": "Código de identificación tributaria",
+                "tipo": "string"
+              },
+              "tpa": {
+                "nombre": "Tipo de parcelario",
+                "tipo": "string"
+              },
+              "ara": {
+                "nombre": "Área",
+                "tipo": "string"
+              },
+              "nmp": {
+                "nombre": "Número de plano",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "110102": {
+            "nombre": "Macizo ",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Extension de territorio cuya superficie varía según su tipología y, por lo general, están totalmente rodeadas de vias de circulación. Se interpreta como macizo al perímetro conformado por la sucesión de los frentes y ochavas de las parcelas o líneas municipales de cada parcela urbana",
+            "atributos": {
+              "tym": {
+                "nombre": "Tipo de macizo",
+                "tipo": "string"
+              },
+              "tpa": {
+                "nombre": "Tipo de parcelario",
+                "tipo": "string"
+              },
+              "ara": {
+                "nombre": "Área",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "110103": {
+            "nombre": "Sección catastral",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Registro administrativo dependiente del Estado en el que se describen los bienes inmuebles.",
+            "atributos": {
+              "tpa": {
+                "nombre": "Tipo de parcelario",
+                "tipo": "string"
+              },
+              "ara": {
+                "nombre": "Área",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "110107": {
+            "nombre": "Circunscripción",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Polígonos en los que un Partido (Departamento) se subdivide, pudiendo contener en conjunto o separadamente plantas urbanas, suburbanas y rurales (ARBA,2018).",
+            "atributos": {
+              "ara": {
+                "nombre": "Área",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "12": {
+    "nombre": "UNIDADES GEOESTADÍSTICAS",
+    "subclases": {
+      "1201": {
+        "nombre": "DIVISIONES CENSALES",
+        "objetos": {
+          "120101": {
+            "nombre": "Fracción censal",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Unidad operativa que subdivide un departamento en forma exhaustiva. Resulta de la adición de una determinada cantidad de radios completos definida para cada operativo censal. (INDEC 2025)",
+            "atributos": {
+              "ca3": {
+                "nombre": "Cantidad de población",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "120102": {
+            "nombre": "Radio censal",
+            "geometria": [
+              "Polígono"
+            ],
+            "definicion": "Unidad operativa que subdivide una fracción en forma exhaustiva y se define para cada operativo censal. Con fines estadísticos, el radio se clasifica en urbano, rural o mixto. (INDEC 2025)",
+            "atributos": {
+              "tro": {
+                "nombre": "Tipo de radio",
+                "tipo": "string"
+              },
+              "ca3": {
+                "nombre": "Cantidad de población",
                 "tipo": "string"
               },
               "sag": {
