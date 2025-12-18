@@ -1,0 +1,430 @@
+{
+  "03": {
+    "nombre": "TRANSPORTE",
+    "subclases": {
+      "0301": {
+        "nombre": "FERROVIARIO",
+        "objetos": {
+          "030101": {
+            "nombre": "Ferrocarril",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Vía férrea constituida por dos o tres rieles o carriles paralelos entre sí, sobre los cuales encajan y giran las ruedas de los trenes (incluye varios modos: ferrocarril, subterráneo, tranvía, entre otros).",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "fun": {
+                "nombre": "Estado ",
+                "tipo": "string"
+              },
+              "rgc": {
+                "nombre": "Trocha",
+                "tipo": "string"
+              },
+              "ltn": {
+                "nombre": "Contador de carriles",
+                "tipo": "string"
+              },
+              "ral": {
+                "nombre": "Ramal ",
+                "tipo": "string"
+              },
+              "caa": {
+                "nombre": "Autoridad responsable",
+                "tipo": "string"
+              },
+              "loc": {
+                "nombre": "Ubicación vertical relativa",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "030102": {
+            "nombre": "Estación ferroviaria",
+            "geometria": [
+              "Punto",
+              "Polígono"
+            ],
+            "definicion": "Instalación edilicia y demás dependencias donde regularmente se detiene el transporte ferroviario, suben y bajan pasajeros y / o mercancías. Incluye apeadero, embarcadero y parada.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "fun": {
+                "nombre": "Estado ",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      },
+      "0302": {
+        "nombre": "VIAL",
+        "objetos": {
+          "030201": {
+            "nombre": "Red vial",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Trayecto diseñado con una superficie especialmente preparada, que se mantiene para ser usado por vehículos generalmente a motor.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "rtn": {
+                "nombre": "Designación de red vial",
+                "tipo": "string"
+              },
+              "fun": {
+                "nombre": "Estado ",
+                "tipo": "string"
+              },
+              "rst": {
+                "nombre": "Tipo de superficie de vía",
+                "tipo": "string"
+              },
+              "typ": {
+                "nombre": "Tipo de vía de transporte",
+                "tipo": "string"
+              },
+              "mes": {
+                "nombre": "Separación vial",
+                "tipo": "string"
+              },
+              "hct": {
+                "nombre": "Jurisdicción de vía de transporte",
+                "tipo": "string"
+              },
+              "loc": {
+                "nombre": "Ubicación vertical relativa",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "030202": {
+            "nombre": "Calle",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Vía de transporte para circulación en el interior de una planta urbana y que no es parte del acceso a la misma. Delimita las manzanas.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "fun": {
+                "nombre": "Estado ",
+                "tipo": "string"
+              },
+              "rst": {
+                "nombre": "Tipo de superficie de vía",
+                "tipo": "string"
+              },
+              "mes": {
+                "nombre": "Separación vial",
+                "tipo": "string"
+              },
+              "hct": {
+                "nombre": "Jurisdicción de vía de transporte",
+                "tipo": "string"
+              },
+              "loc": {
+                "nombre": "Ubicación vertical relativa",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "030203": {
+            "nombre": "Huella",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Camino de acceso y recorrido de establecimientos. Incluye caminos de poca importancia que se desprenden de caminos de tierra, caminos demarcados en loteos, entre otros.",
+            "atributos": {
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "030208": {
+            "nombre": "Estación de ómnibus",
+            "geometria": [
+              "Punto"
+            ],
+            "definicion": "Predio destinado a la maniobra de ómnibus nacionales e internacionales, carga, ascenso y descenso de pasajeros. Puede o no tener aduana.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "fun": {
+                "nombre": "Estado",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      },
+      "0304": {
+        "nombre": "FLUVIAL, MARÍTIMO Y LACUSTRE",
+        "objetos": {
+          "030403": {
+            "nombre": "Puerto",
+            "geometria": [
+              "Punto",
+              "Polígono"
+            ],
+            "definicion": "Lugar dotado de instalaciones de terminales y de transferencia para la carga y descarga de mercaderías o pasajeros. Incluye atracadero para balsas, clubes deportivos y cualquier otra instalación para transferencia de pasajeros y / o mercaderías. No incluye puerto natural.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "fun": {
+                "nombre": "Estado",
+                "tipo": "string"
+              },
+              "fuc": {
+                "nombre": "Uso. Funcion",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "030405": {
+            "nombre": "Vía navegable",
+            "geometria": [
+              "Línea",
+              "Polígono"
+            ],
+            "definicion": "Vía  definida y mantenida por autoridad competente que permite la navegación de una embarcación. Incluye traza de canales en el Río de la Plata, accesos a puertos de La Plata, Buenos Aires y Bahía Blanca, entre otros.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      },
+      "0305": {
+        "nombre": "AÉREO",
+        "objetos": {
+          "030501": {
+            "nombre": "Aeródromo",
+            "geometria": [
+              "Punto",
+              "Polígono"
+            ],
+            "definicion": "Zona definida sobre tierra o agua (incluidos eventuales edificios, instalaciones y equipos), cuyo propósito es ser utilizada total o parcialmente para la llegada, salida y movimiento en superficie de aeronaves y / o helicópteros.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "fun": {
+                "nombre": "Estado ",
+                "tipo": "string"
+              },
+              "iko": {
+                "nombre": "Código OACI de aeródromo",
+                "tipo": "string"
+              },
+              "ita": {
+                "nombre": "Código IATA de aeródromo",
+                "tipo": "string"
+              },
+              "ana": {
+                "nombre": "Código nacional de aeródromo",
+                "tipo": "string"
+              },
+              "aer": {
+                "nombre": "Aerolíneas",
+                "tipo": "string"
+              },
+              "caa": {
+                "nombre": "Autoridad responsable",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "030502": {
+            "nombre": "Ruta aérea",
+            "geometria": [
+              "Línea"
+            ],
+            "definicion": "Línea que representa el corredor aéreo definido entre el aeródromo de origen y el aeródromo de destino. (Línea de flujo ortodrómica)",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "ilo": {
+                "nombre": "Identificador ortodrómico",
+                "tipo": "string"
+              },
+              "aer": {
+                "nombre": "Aerolíneas",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      },
+      "0307": {
+        "nombre": "CRUCES Y ENLACES",
+        "objetos": {
+          "030701": {
+            "nombre": "Puente",
+            "geometria": [
+              "Punto",
+              "línea"
+            ],
+            "definicion": "Estructura que asegura la continuidad de una vía de transporte (red vial, calle, ferrocarril, entre otros) sobre un obstáculo natural o artificial del terreno (corriente de agua, canal, entre otros).",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "fun": {
+                "nombre": "Estado ",
+                "tipo": "string"
+              },
+              "tup": {
+                "nombre": "Tipo de uso de puente",
+                "tipo": "string"
+              },
+              "mcc": {
+                "nombre": "Tipo de material estructural",
+                "tipo": "string"
+              },
+              "bsc": {
+                "nombre": "Tipo de puente",
+                "tipo": "string"
+              },
+              "feo": {
+                "nombre": "Orientación del objeto",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          },
+          "030703": {
+            "nombre": "Túnel",
+            "geometria": [
+              "Punto",
+              "línea"
+            ],
+            "definicion": "Paso subterráneo abierto artificialmente para establecer una comunicación a través de una montaña, por debajo de una corriente de agua u otro obstáculo.",
+            "atributos": {
+              "gna": {
+                "nombre": "Término genérico",
+                "tipo": "string"
+              },
+              "nam": {
+                "nombre": "Término específico",
+                "tipo": "string"
+              },
+              "fun": {
+                "nombre": "Estado ",
+                "tipo": "string"
+              },
+              "feo": {
+                "nombre": "Orientación del objeto",
+                "tipo": "string"
+              },
+              "sag": {
+                "nombre": "Autoridad de fuente",
+                "tipo": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
