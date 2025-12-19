@@ -12,6 +12,8 @@ import os
 import json
 from io import BytesIO
 from shapely.geometry import MultiPolygon, MultiLineString, MultiPoint
+import re
+import unicodedata
 
 # ------------------------------
 # CONFIGURACIÓN GENERAL
@@ -136,6 +138,13 @@ def exportar_shp_zip(gdf, nombre):
                 z.write(os.path.join(tmp, f), arcname=f)
     buffer.seek(0)
     return buffer
+
+def normalizar_nombre_archivo(texto):
+    texto = unicodedata.normalize("NFKD", texto)
+    texto = texto.encode("ascii", "ignore").decode("ascii")
+    texto = texto.lower().replace(" ", "_")
+    texto = re.sub(r"[^a-z0-9_]", "", texto)
+    return texto
 
 # ------------------------------
 # 1. CARGA DE DATOS
@@ -357,14 +366,21 @@ if st.button("Validar y generar SHP"):
     gdf_out.columns = truncar_unico(gdf_out.columns)
 
     # ------------------------------
+    # NOMBRE DE ARCHIVO
+    # ------------------------------
+    og_name = normalizar_nombre_archivo(og["nombre"])
+
+    nombre_zip = f"{og_cod}_{og_name}"
+
+    # ------------------------------
     # EXPORTACIÓN
     # ------------------------------
-    zip_file = exportar_shp_zip(gdf_out, og_cod)
+    zip_file = exportar_shp_zip(gdf_out, nombre_zip)
 
     st.download_button(
         "Descargar SHP IDERA (ZIP)",
         data=zip_file,
-        file_name=f"{og_cod}_IDERA.zip",
+        file_name=f"{nombre_zip}.zip",
         mime="application/zip"
     )
 st.divider()
