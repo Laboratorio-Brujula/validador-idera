@@ -233,16 +233,19 @@ st.divider()
 st.header("4. Normalización geométrica")
 st.markdown("Automáticamente verificará que el tipo de geometría sea el correcto, de lo contrario se visualizará una adevertencia.")
 
-gdf = normalizar_geometria(gdf, og)
-st.success("Geometría compatible con IDERA")
-
+try:
+    gdf = normalizar_geometria(gdf, og)
+    st.success("Geometría compatible con IDERA")
+except ValueError as e:
+    st.error(str(e))
+    st.stop()
 # ------------------------------
 # 5. VISTA PREVIA ATRIBUTOS
 # ------------------------------
 st.divider()
 st.header("5. Vista previa – atributos originales")
 st.markdown("La tabla a continuación muestra los atributos originales del dato espacial.")
-st.dataframe(gdf_original.drop(columns="geometry"), use_container_width=True)
+st.dataframe(gdf_original.drop(columns="geometry"), width="stretch")
 
 # ------------------------------
 # 6. MAPEO DE ATRIBUTOS
@@ -285,47 +288,97 @@ for attr in atributos_idera:
 # =====================================================
 st.divider()
 st.header("7. Vista y edición de atributos IDERA")
-st.markdown("Vista previa de la tabla de atributos antes de la exportación. Si se desea realizar algún cambio en la misma, la misma puede ser editada.")
-st.markdown("_Al final hacer click en el botón de -validar y generar SHP-_")
+st.markdown(
+    "Vista previa de la tabla de atributos antes de la exportación. "
+    "Los cambios realizados aquí se conservarán hasta la exportación."
+)
 
 if not mapeo:
     st.info("Primero debe completar el mapeo de atributos IDERA.")
-else:
-    # Construir GDF limpio
+    st.stop()
+
+atributos_catalogo = list(og["atributos"].keys())
+
+# --------------------------------------------------
+# CREAR TABLA IDERA LIMPIA SOLO UNA VEZ
+# --------------------------------------------------
+if "gdf_editado" not in st.session_state:
+
     gdf_limpio = gdf[["geometry"]].copy()
 
-    for attr_idera, col_origen in mapeo.items():
-        gdf_limpio[attr_idera] = gdf[col_origen].apply(reparar_encoding)
-
-    # Atributos definidos en el catálogo (todos)
-    atributos_catalogo = list(og["atributos"].keys())
-
-    # Crear columnas vacías para todos los atributos IDERA
+    # Crear todas las columnas IDERA
     for attr in atributos_catalogo:
-        if attr not in gdf_limpio.columns:
-            gdf_limpio[attr] = pd.NA
+        gdf_limpio[attr] = pd.NA
 
-    # Sobrescribir solo los atributos mapeados
+    # Asignar valores mapeados desde el original
     for attr_idera, col_origen in mapeo.items():
         gdf_limpio[attr_idera] = gdf[col_origen].apply(reparar_encoding)
 
-    # Reordenar columnas: IDERA + geometría
+    # Reordenar columnas
     gdf_limpio = gdf_limpio[atributos_catalogo + ["geometry"]]
 
-    # Mostrar editor (sin geometría)
-    tabla_editable = st.data_editor(
-        gdf_limpio.drop(columns="geometry"),
-        use_container_width=True,
-        num_rows="dynamic"
-    )
-
-    # Reinyectar cambios (TODOS los atributos IDERA)
-    gdf_limpio[atributos_catalogo] = tabla_editable
-
-    # Guardar en sesión
     st.session_state.gdf_editado = gdf_limpio
 
-    st.success("Tabla IDERA lista para validación")
+# Trabajar siempre sobre sesión
+gdf_limpio = st.session_state.gdf_editado
+
+# --------------------------------------------------
+# ASIGNACIÓN MASIVA DE VALOR CONSTANTE
+# --------------------------------------------------
+st.markdown("### Asignación masiva de valores")
+st.markdown(
+    "Permite asignar un valor único a **todas las filas** de un atributo IDERA "
+    "(por ejemplo: `fna = Río`)."
+)
+st.markdown("Realizar esta operación en la cantidad de columnas que sea necesario.")
+
+# Primera línea: selector + valor
+col1, col2 = st.columns([3, 5])
+
+with col1:
+    atributo_constante = st.selectbox(
+        "Atributo IDERA",
+        options=atributos_catalogo,
+        key="atributo_constante"
+    )
+
+with col2:
+    valor_constante = st.text_input(
+        "Valor a asignar",
+        key="valor_constante"
+    )
+
+# Segunda línea: botón
+if st.button("Aplicar a todas las filas"):
+    if valor_constante != "":
+        gdf_limpio[atributo_constante] = valor_constante
+        st.session_state.gdf_editado = gdf_limpio
+        st.success(
+            f"Valor '{valor_constante}' asignado a todas las filas del campo '{atributo_constante}'."
+        )
+    else:
+        st.warning("Debe ingresar un valor.")
+
+# --------------------------------------------------
+# EDITOR DE TABLA (PERSISTENTE)
+# --------------------------------------------------
+st.markdown("Realizar los útlmos cambios que se consideren necesarios antes de exportar, luego presionar el botón para validar y generar el SHP")
+tabla_editable = st.data_editor(
+    gdf_limpio.drop(columns="geometry"),
+    width="stretch",
+    num_rows="dynamic"
+)
+
+# Reconstruir GeoDataFrame preservando geometría
+gdf_limpio = gpd.GeoDataFrame(
+    tabla_editable,
+    geometry=st.session_state.gdf_editado.geometry,
+    crs=st.session_state.gdf_editado.crs
+)
+st.session_state.gdf_editado = gdf_limpio
+
+st.success("Tabla IDERA lista para validación")
+
 
 gdf_final = st.session_state.get("gdf_editado")
 
@@ -384,4 +437,4 @@ if st.button("Validar y generar SHP"):
         mime="application/zip"
     )
 st.divider()
-st.markdown("Creado en el **Laboratorio de la Brújula |** Innovación digital para el desarrollo territorial | _https://santifederico-validador-idera-app-uhrhkz.streamlit.app/_")
+st.markdown("Creado en el **Laboratorio de la Brújula |** Innovación digital para el desarrollo territorial | _https://validador-idera.streamlit.app/_")
